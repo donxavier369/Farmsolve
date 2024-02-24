@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#bannerimg {
+    width: 29rem;
+    height: 15rem;
+  }
+
+.banner_odd {
+    margin-top: 2%;
+    display: flex;
+    margin-left: 2%;
+    height: fit-content;
+    padding: 50px 0px;
+}
+
+.banner_odd p {
+    font-family:sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    width: 57rem;
+    padding-left: 4rem;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-align: left;
+}
+
+.banner_odd a{
+    position: relative;
+    top: 12rem;
+    right: 54%;
+    text-decoration: none;
+    width: 13rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: black;
+    background-color: #AAD6A0;
+    border-radius: 20px;
+    padding: 7px 2px;
+
+
+    
+}
+
+/* ================ */
+
+.banner_even {
+    margin: 2% 2%;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 2%;
+    height: fit-content;
+}
+
+.banner_even p {
+    font-family:sans-serif;
+    font-weight:lighter;
+    font-size: 3rem;
+    width: 70rem;
+    padding-right: 4rem;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    text-align: left;
+}
+
+
+
+.button1{
+    text-decoration: none;
+    width: 13rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: black;
+    background-color: #AAD6A0;
+    border-radius: 20px;
+    padding: 8px 14px;
+    position: relative;
+    right: 7rem;
+    bottom: 5.7rem;
+
+}
+.button2{
+    text-decoration: none;
+    width: 13rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: black;
+    background-color: #AAD6A0;
+    border-radius: 20px;
+    padding: 8px 14px;
+    position: relative;
+    right: 41rem;
+    bottom: 8rem;
+
+}
+
+.button3{
+    text-decoration: none;
+    width: 13rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: black;
+    background-color: #AAD6A0;
+    border-radius: 20px;
+    padding: 8px 14px;
+    position: relative;
+    right: 7rem;
+    bottom: 90px;
+
+}
+
+.button4{
+    text-decoration: none;
+    width: 13rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: black;
+    background-color: #AAD6A0;
+    border-radius: 20px;
+    padding: 8px 14px;
+    position: relative;
+    right: 41.5rem;
+    bottom: 70px;
+
+}

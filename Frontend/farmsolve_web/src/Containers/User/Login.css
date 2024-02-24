@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+.login{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.loginform{
+    /* background-color: rgb(88, 8, 8); */
+    background: radial-gradient(circle at 10% 20%, rgb(0, 0, 0) 50%, rgb(64, 64, 64) 99%);    
+    width: 60%;
+    color: white;
+}
+
+.loginform h3{
+    margin-top:7%;
+    margin-left: -64%;
+    margin-bottom: 1px;
+    text-transform: uppercase;
+}
+
+.loginform h1{
+    margin-top:5px;
+    margin-left: -32%;
+    margin-bottom: 1px;
+    font-size: 65px;
+}
+    
+
+.loginform form {
+    margin-left: 2%;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.loginform button{
+    display: flex;
+    flex-direction: row;
+}
+
+.loginform form input{
+    border-radius: 10px;
+    margin-bottom: 20px;
+    height: 40px;
+    width: 30rem;
+    position: relative;
+    left: 9%;
+    background-color: white;
+}
+
+
+.loginform form button{
+    border-radius: 5px;
+    height: 45px;
+    width: 13rem;
+    font-size: larger;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #151501; 
+    color: white;
+}
+
+.loginform form ::placeholder{
+    font-size: 15px;
+    font-weight: 300;
+    color: black;
+    padding-left: 25px;
+}
+
+.loginform form button{
+    border-radius: 5px;
+    height: 45px;
+    width: 13rem;
+    font-size: larger;
+    align-items: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #151501; 
+    color: white;
+}
+
+.actions{
+    display: flex;
+    margin-left: 9%;
+}
+
+#login_btn{
+    margin-right: 50%;
+    background-color: white;
+    border-color: yellow;
+    color: black;
+}
+
+#login_btn:hover{
+    background-color: #151501;
+    color: white;
+    border-color: yellow;
+}
+
+
+.detail {
+    width: 40%;
+    background-color: rgb(218, 203, 203);
+}
+
