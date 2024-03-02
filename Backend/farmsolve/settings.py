@@ -51,7 +51,7 @@ INSTALLED_APPS = [
     'allauth.account',
     #allauth socialaccount
     'allauth.socialaccount',
-    'allauth.socailaccount.providers.google',
+    'allauth.socialaccount.providers.google',
     #local app
     'accounts',
 ]
@@ -66,6 +66,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'allauth.account.middleware.AccountMiddleware',
 ]
 
 ROOT_URLCONF = 'farmsolve.urls'
@@ -94,8 +95,12 @@ WSGI_APPLICATION = 'farmsolve.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'farmsolve',
+        'USER': 'postgres',
+        'PASSWORD': 'mobin',
+        'PORT': '5432',
+        'HOST': 'localhost'
     }
 }
 
@@ -175,9 +180,9 @@ REST_AUTH = {
 }
 
 #cors headers
-CORS_ALLOWED_ORIGINS = {
+CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
-}
+]
 
 #send email
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
@@ -186,3 +191,9 @@ EMAIL_USE_TLS = True
 EMAIL_PORT = 587
 EMAIL_HOST_USER = 'farmsolve@gmail.com'
 EMAIL_HOST_PASSWORD = 'fvtf vgtu hgjd tiqq'
+
+AUTH_USER_MODEL = "accounts.CustomUserModel"
+
+ACCOUNT_USERNAME_REQUIRED = False
+
+
